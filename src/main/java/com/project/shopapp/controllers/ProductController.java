@@ -80,11 +80,19 @@ public class ProductController {
                 return ResponseEntity.badRequest().body(localizationUtils
                         .getLocalizedMessage(MessageKeys.UPLOAD_IMAGES_MAX_5));
             }
-            List<FileUploadResponse> responses = fileUpload.uploadFiles(files);
+            List<FileUploadResponse> responses = fileUpload.uploadMultipleFiles(files);
+            List<ProductImage> productImages = new ArrayList<>();
             logger.info("responses: {}", responses);
-
-            return  null;
-
+            for(FileUploadResponse response : responses) {
+                ProductImage productImage = productService.createProductImage(
+                        existingProduct.getId(),
+                        ProductImageDTO.builder()
+                                .imageUrl(response.getFilePath())
+                                .build()
+                );
+                productImages.add(productImage);
+            }
+            return ResponseEntity.ok().body(productImages);
         }catch (Exception e){
             return ResponseEntity.badRequest().body(e.getMessage());
         }

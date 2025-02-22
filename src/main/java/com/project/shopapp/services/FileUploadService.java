@@ -16,13 +16,17 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
@@ -81,5 +85,46 @@ public class FileUploadService implements IFileUploadService {
             }
         }
         return responses;
+    }
+    @Override
+    public List<FileUploadResponse> uploadMultipleFiles(List<MultipartFile> multipartFiles) {
+        log.info(LocalDate.now().toString());
+        log.info(folder);
+        ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+        List<CompletableFuture<FileUploadResponse>> futures = multipartFiles.stream()
+                .map(file -> CompletableFuture.supplyAsync(() -> uploadSingleFile(file), executorService))
+                .toList();
+        List<FileUploadResponse> responses = futures.stream()
+                .map(CompletableFuture::join)
+                .collect(Collectors.toList());
+
+        executorService.shutdown();
+
+        return responses;
+    }
+
+    @Override
+    public FileUploadResponse uploadSingleFile(MultipartFile multipartFile) {
+        try {
+            ObjectMetadata objectMetadata = new ObjectMetadata();
+            objectMetadata.setContentType(multipartFile.getContentType());
+            objectMetadata.setContentLength(multipartFile.getSize());
+
+            long key = LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+            String filePath = folder + "/" + key + "-" + multipartFile.getOriginalFilename();
+
+            PutObjectRequest putObjectRequest = new PutObjectRequest(bucketName, filePath, multipartFile.getInputStream(), objectMetadata)
+                    .withCannedAcl(CannedAccessControlList.PublicRead);
+            s3Client.putObject(putObjectRequest);
+
+            String imageUrl = s3Client.getUrl(bucketName, filePath).toString();
+            FileUploadResponse response = new FileUploadResponse();
+            response.setFilePath(imageUrl);
+            response.setDateTime(LocalDateTime.now());
+
+            return response;
+        } catch (IOException e) {
+            throw new FileUploadException("Error occurred in file upload ==> " + e.getMessage());
+        }
     }
 }
