@@ -13,6 +13,8 @@ import com.project.shopapp.services.IFileUploadService;
 import com.project.shopapp.services.IProductRedisService;
 import com.project.shopapp.services.IProductService;
 import com.project.shopapp.utils.MessageKeys;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -49,7 +51,7 @@ public class ProductController {
     private final IFileUploadService fileUpload;
 
     @PostMapping("")
-    //POST http://localhost:8088/v1/api/products
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<?> createProduct(
             @Valid @RequestBody ProductDTO productDTO,
             BindingResult result
@@ -71,6 +73,7 @@ public class ProductController {
 
     @PostMapping(value = "upload-images/{id}",
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<?> uploadProductImages(@PathVariable("id") Long productId,
                                                  @RequestParam("files") List<MultipartFile> files) {
         try{
@@ -100,7 +103,7 @@ public class ProductController {
 
     @PostMapping(value = "uploads/{id}",
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    //POST http://localhost:8088/v1/api/products
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<?> uploadImages(
             @PathVariable("id") Long productId,
             @ModelAttribute("files") List<MultipartFile> files
@@ -254,6 +257,7 @@ public class ProductController {
     }
 
     @DeleteMapping("/{id}")
+    @Operation(security = { @SecurityRequirement(name = "bearer-key") })
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<String> deleteProduct(@PathVariable long id) {
         try {
@@ -288,6 +292,8 @@ public class ProductController {
     }
     //update a product
     @PutMapping("/{id}")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @Operation(security = { @SecurityRequirement(name = "bearer-key") })
     public ResponseEntity<?> updateProduct(
             @PathVariable long id,
             @RequestBody ProductDTO productDTO) {
