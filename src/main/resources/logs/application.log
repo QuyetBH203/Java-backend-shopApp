@@ -28014,3 +28014,1108 @@ Security filter chain: [
 2025-02-22 23:52:45.790 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-02-22 23:52:45.904 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-02-22 23:52:45.910 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-22 23:52:50.420 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-02-22 23:52:50.472 [main] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.12 with PID 17872 (D:\JavaSpring\backend-20\shopapp-backend\target\classes started by buihu in D:\JavaSpring\backend-20\shopapp-backend)
+2025-02-22 23:52:50.474 [main] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-22 23:52:51.259 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-22 23:52:51.260 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-22 23:52:51.411 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 144 ms. Found 7 JPA repository interfaces.
+2025-02-22 23:52:51.424 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-22 23:52:51.425 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-22 23:52:51.438 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-22 23:52:51.439 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-22 23:52:51.439 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-22 23:52:51.439 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-22 23:52:51.441 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-22 23:52:51.441 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-22 23:52:51.441 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-22 23:52:51.441 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-02-22 23:52:52.051 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2025-02-22 23:52:52.059 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-02-22 23:52:52.061 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-22 23:52:52.061 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-02-22 23:52:52.147 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-22 23:52:52.147 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1613 ms
+2025-02-22 23:52:52.269 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-22 23:52:52.325 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2025-02-22 23:52:52.328 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-02-22 23:52:52.450 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-22 23:52:52.575 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-22 23:52:52.589 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-22 23:52:52.728 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ff6804a
+2025-02-22 23:52:52.731 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-22 23:52:53.032 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-22 23:52:54.027 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-22 23:52:54.030 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-22 23:52:54.472 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-22 23:52:54.572 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-22 23:52:55.091 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)
+2025-02-22 23:52:55.107 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-22 23:52:55.518 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)
+2025-02-22 23:52:55.519 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-22 23:52:55.770 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2cd9488b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f4694f8, org.springframework.security.web.context.SecurityContextHolderFilter@6aa34b05, org.springframework.security.web.header.HeaderWriterFilter@45970ee8, org.springframework.web.filter.CorsFilter@12a16e42, org.springframework.security.web.authentication.logout.LogoutFilter@63e31b89, com.project.shopapp.filters.JwtTokenFilter@698394bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@699e81db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8ace41e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@143dc03a, org.springframework.security.web.access.ExceptionTranslationFilter@38187be6, org.springframework.security.web.access.intercept.AuthorizationFilter@44459661]
+2025-02-22 23:52:55.776 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2025-02-22 23:52:56.003 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-02-22 23:52:56.028 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2025-02-22 23:52:56.038 [main] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 5.938 seconds (process running for 6.549)
+2025-02-22 23:53:02.380 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-22 23:53:02.380 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-22 23:53:02.381 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-22 23:53:02.390 [http-nio-8088-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/5':
+
+org.apache.catalina.connector.RequestFacade@688cad35
+
+servletPath:/api/v1/products/upload-images/5
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: cad81ff4-e19a-411f-8ecb-b4a0bafe3ad5
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------751053995912333394848721
+content-length: 1036641
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-22 23:53:02.394 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/5
+2025-02-22 23:53:02.644 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/5
+2025-02-22 23:53:02.737 [http-nio-8088-exec-1] INFO  c.p.s.services.FileUploadService - 2025-02-22
+2025-02-22 23:53:02.738 [http-nio-8088-exec-1] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-22 23:53:03.392 [pool-3-thread-2] WARN  com.amazonaws.util.Base64 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+2025-02-22 23:53:03.863 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243182741-026.jpg, dateTime=2025-02-22T23:53:03.531833400), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243182741-027.jpg, dateTime=2025-02-22T23:53:03.393861500), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243182741-028.jpg, dateTime=2025-02-22T23:53:03.395861200), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243182741-029.jpg, dateTime=2025-02-22T23:53:03.794315800), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243182741-030.jpg, dateTime=2025-02-22T23:53:03.863651200)]
+2025-02-22 23:53:15.431 [http-nio-8088-exec-6] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/8':
+
+org.apache.catalina.connector.RequestFacade@38829d6
+
+servletPath:/api/v1/products/upload-images/8
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: b11edd7f-e9c6-4589-b4d0-561239563e6c
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------379798041739874142978181
+content-length: 1036641
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-22 23:53:15.432 [http-nio-8088-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/8
+2025-02-22 23:53:15.477 [http-nio-8088-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/8
+2025-02-22 23:53:15.494 [http-nio-8088-exec-6] INFO  c.p.s.services.FileUploadService - 2025-02-22
+2025-02-22 23:53:15.494 [http-nio-8088-exec-6] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-22 23:53:16.378 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243195495-026.jpg, dateTime=2025-02-22T23:53:16.037589200), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243195495-027.jpg, dateTime=2025-02-22T23:53:16.040592600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243195496-028.jpg, dateTime=2025-02-22T23:53:15.872996900), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243195496-029.jpg, dateTime=2025-02-22T23:53:16.031862100), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243195496-030.jpg, dateTime=2025-02-22T23:53:16.378431300)]
+2025-02-22 23:55:32.490 [http-nio-8088-exec-7] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/11':
+
+org.apache.catalina.connector.RequestFacade@20037971
+
+servletPath:/api/v1/products/upload-images/11
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: df3fa832-b560-4423-88b3-91a344401251
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------616597830032335770064498
+content-length: 1036641
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-22 23:55:32.491 [http-nio-8088-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/11
+2025-02-22 23:55:32.521 [http-nio-8088-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/11
+2025-02-22 23:55:32.531 [http-nio-8088-exec-7] INFO  c.p.s.services.FileUploadService - 2025-02-22
+2025-02-22 23:55:32.531 [http-nio-8088-exec-7] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-22 23:55:33.199 [http-nio-8088-exec-7] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243332532-026.jpg, dateTime=2025-02-22T23:55:33.089350500), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243332532-027.jpg, dateTime=2025-02-22T23:55:33.006863800), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243332532-028.jpg, dateTime=2025-02-22T23:55:33.128017900), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243332532-029.jpg, dateTime=2025-02-22T23:55:33.199978500), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243332532-030.jpg, dateTime=2025-02-22T23:55:33.156097900)]
+2025-02-22 23:56:05.073 [http-nio-8088-exec-5] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/12':
+
+org.apache.catalina.connector.RequestFacade@5fa5eb2e
+
+servletPath:/api/v1/products/upload-images/12
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: 35fad0a8-70c4-4b10-9f4c-4279c7a425a8
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------053974299249350420395479
+content-length: 1036641
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-22 23:56:05.073 [http-nio-8088-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/12
+2025-02-22 23:56:05.117 [http-nio-8088-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/12
+2025-02-22 23:56:05.126 [http-nio-8088-exec-5] INFO  c.p.s.services.FileUploadService - 2025-02-22
+2025-02-22 23:56:05.126 [http-nio-8088-exec-5] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-22 23:56:05.737 [http-nio-8088-exec-5] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243365127-026.jpg, dateTime=2025-02-22T23:56:05.553845200), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243365127-027.jpg, dateTime=2025-02-22T23:56:05.632939600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243365127-028.jpg, dateTime=2025-02-22T23:56:05.635953600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243365127-029.jpg, dateTime=2025-02-22T23:56:05.737337700), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243365127-030.jpg, dateTime=2025-02-22T23:56:05.729280800)]
+2025-02-23 00:01:42.633 [http-nio-8088-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/15':
+
+org.apache.catalina.connector.RequestFacade@7b6a6b5
+
+servletPath:/api/v1/products/upload-images/15
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: 9220b227-c353-46c0-a594-038b04bb4eda
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------291794227922517776950171
+content-length: 1036641
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 00:01:42.634 [http-nio-8088-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/15
+2025-02-23 00:01:42.664 [http-nio-8088-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/15
+2025-02-23 00:01:42.673 [http-nio-8088-exec-2] INFO  c.p.s.services.FileUploadService - 2025-02-23
+2025-02-23 00:01:42.673 [http-nio-8088-exec-2] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-23 00:01:43.279 [http-nio-8088-exec-2] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243702674-026.jpg, dateTime=2025-02-23T00:01:43.174224600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243702674-027.jpg, dateTime=2025-02-23T00:01:43.048841800), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243702674-028.jpg, dateTime=2025-02-23T00:01:43.113322600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243702674-029.jpg, dateTime=2025-02-23T00:01:43.231835500), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243702674-030.jpg, dateTime=2025-02-23T00:01:43.279208200)]
+2025-02-23 00:02:08.022 [http-nio-8088-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/20':
+
+org.apache.catalina.connector.RequestFacade@37c463a3
+
+servletPath:/api/v1/products/upload-images/20
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: c5cfc4b2-fa4c-48f7-8bd8-5a3549e60e16
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------445603408787311660857803
+content-length: 1036641
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 00:02:08.022 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/20
+2025-02-23 00:02:08.050 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/20
+2025-02-23 00:02:08.058 [http-nio-8088-exec-1] INFO  c.p.s.services.FileUploadService - 2025-02-23
+2025-02-23 00:02:08.059 [http-nio-8088-exec-1] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-23 00:02:08.698 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243728060-026.jpg, dateTime=2025-02-23T00:02:08.564717900), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243728060-027.jpg, dateTime=2025-02-23T00:02:08.422056600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243728060-028.jpg, dateTime=2025-02-23T00:02:08.500719600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243728060-029.jpg, dateTime=2025-02-23T00:02:08.698972), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243728060-030.jpg, dateTime=2025-02-23T00:02:08.687960300)]
+2025-02-23 00:05:58.300 [http-nio-8088-exec-8] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/30':
+
+org.apache.catalina.connector.RequestFacade@17e00e73
+
+servletPath:/api/v1/products/upload-images/30
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: af6e6bf1-099a-4f1d-aad7-fa65722c9638
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------010635683974658397087894
+content-length: 1036641
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 00:05:58.301 [http-nio-8088-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/30
+2025-02-23 00:05:58.328 [http-nio-8088-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/30
+2025-02-23 00:05:58.338 [http-nio-8088-exec-8] INFO  c.p.s.services.FileUploadService - 2025-02-23
+2025-02-23 00:05:58.338 [http-nio-8088-exec-8] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-23 00:05:59.154 [http-nio-8088-exec-8] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243958343-026.jpg, dateTime=2025-02-23T00:05:58.872922800), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243958343-027.jpg, dateTime=2025-02-23T00:05:58.963820900), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243958343-028.jpg, dateTime=2025-02-23T00:05:58.818467300), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243958343-029.jpg, dateTime=2025-02-23T00:05:59.154077400), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740243958343-030.jpg, dateTime=2025-02-23T00:05:59.146795)]
+2025-02-23 00:06:33.039 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-23 00:06:33.155 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-23 00:06:33.164 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-23 15:17:21.703 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-02-23 15:17:21.750 [main] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.12 with PID 3468 (D:\JavaSpring\backend-20\shopapp-backend\target\classes started by buihu in D:\JavaSpring\backend-20\shopapp-backend)
+2025-02-23 15:17:21.753 [main] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-23 15:17:22.622 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 15:17:22.623 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-23 15:17:22.786 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 154 ms. Found 7 JPA repository interfaces.
+2025-02-23 15:17:22.801 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 15:17:22.802 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 15:17:22.816 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:17:22.816 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:17:22.816 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:17:22.817 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:17:22.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:17:22.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:17:22.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:17:22.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-02-23 15:17:23.470 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2025-02-23 15:17:23.480 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-02-23 15:17:23.482 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-23 15:17:23.482 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-02-23 15:17:23.567 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-23 15:17:23.568 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1771 ms
+2025-02-23 15:17:23.699 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-23 15:17:23.788 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2025-02-23 15:17:23.791 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-02-23 15:17:23.935 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-23 15:17:24.066 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-23 15:17:24.082 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-23 15:17:24.259 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32a033b6
+2025-02-23 15:17:24.261 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-23 15:17:24.579 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-23 15:17:25.626 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-23 15:17:25.628 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-23 15:17:25.951 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-23 15:17:26.047 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-23 15:17:26.517 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)
+2025-02-23 15:17:26.531 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-23 15:17:26.971 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)
+2025-02-23 15:17:26.971 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-23 15:17:27.266 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f47bd4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c244fd0, org.springframework.security.web.context.SecurityContextHolderFilter@8ace41e, org.springframework.security.web.header.HeaderWriterFilter@6aa34b05, org.springframework.web.filter.CorsFilter@7c0abd1, org.springframework.security.web.authentication.logout.LogoutFilter@29d7d117, com.project.shopapp.filters.JwtTokenFilter@7ceb7a60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18be5bce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b3915b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d60c9e6, org.springframework.security.web.access.ExceptionTranslationFilter@54f5457e, org.springframework.security.web.access.intercept.AuthorizationFilter@393489c3]
+2025-02-23 15:17:27.282 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2025-02-23 15:17:27.552 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-02-23 15:17:27.581 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2025-02-23 15:17:27.590 [main] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 6.212 seconds (process running for 6.984)
+2025-02-23 15:25:15.901 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-23 15:25:15.902 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-23 15:25:15.904 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-02-23 15:25:15.915 [http-nio-8088-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/1':
+
+org.apache.catalina.connector.RequestFacade@1f0448d2
+
+servletPath:/api/v1/products/upload-images/1
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: 8e1d1b42-d3b1-4bfc-8292-cae5feeb8e43
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------954940323524722350402018
+content-length: 809072
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 15:25:15.921 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/1
+2025-02-23 15:25:16.246 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/1
+2025-02-23 15:25:16.332 [http-nio-8088-exec-1] INFO  c.p.s.services.FileUploadService - 2025-02-23
+2025-02-23 15:25:16.333 [http-nio-8088-exec-1] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-23 15:25:17.694 [pool-3-thread-2] WARN  com.amazonaws.util.Base64 - JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+2025-02-23 15:25:18.542 [http-nio-8088-exec-1] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299116339-001.jpg, dateTime=2025-02-23T15:25:18.317931700), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299116339-002.jpg, dateTime=2025-02-23T15:25:17.696051700), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299116339-003.jpg, dateTime=2025-02-23T15:25:17.897652500), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299116339-004.jpg, dateTime=2025-02-23T15:25:18.542494500), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299116339-005.jpg, dateTime=2025-02-23T15:25:18.317931700)]
+2025-02-23 15:25:41.053 [http-nio-8088-exec-3] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/2':
+
+org.apache.catalina.connector.RequestFacade@2e796e34
+
+servletPath:/api/v1/products/upload-images/2
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: a1be0558-fc06-456e-b52b-887badae78f6
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------235278483955806739247494
+content-length: 1370878
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 15:25:41.065 [http-nio-8088-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/2
+2025-02-23 15:25:41.117 [http-nio-8088-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/2
+2025-02-23 15:25:41.130 [http-nio-8088-exec-3] INFO  c.p.s.services.FileUploadService - 2025-02-23
+2025-02-23 15:25:41.131 [http-nio-8088-exec-3] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-23 15:25:41.919 [http-nio-8088-exec-3] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299141138-006.jpg, dateTime=2025-02-23T15:25:41.607604600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299141138-007.jpg, dateTime=2025-02-23T15:25:41.716761600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299141138-008.jpg, dateTime=2025-02-23T15:25:41.684761100), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299141138-009.jpg, dateTime=2025-02-23T15:25:41.745774700), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299141138-010.jpg, dateTime=2025-02-23T15:25:41.919050100)]
+2025-02-23 15:26:01.865 [http-nio-8088-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/2':
+
+org.apache.catalina.connector.RequestFacade@6e4b7b1b
+
+servletPath:/api/v1/products/upload-images/2
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: 5df3d7f9-fec8-4710-b413-c2979bced3ae
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------474885421579754576249525
+content-length: 1032562
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 15:26:01.866 [http-nio-8088-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/2
+2025-02-23 15:26:01.895 [http-nio-8088-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/2
+2025-02-23 15:26:01.905 [http-nio-8088-exec-4] INFO  c.p.s.services.FileUploadService - 2025-02-23
+2025-02-23 15:26:01.905 [http-nio-8088-exec-4] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-23 15:26:03.297 [http-nio-8088-exec-4] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299161906-011.jpg, dateTime=2025-02-23T15:26:03.116230700), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299161906-012.jpg, dateTime=2025-02-23T15:26:03.297769700), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299161906-013.jpg, dateTime=2025-02-23T15:26:03.182683500), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299161906-014.jpg, dateTime=2025-02-23T15:26:03.108313600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299161906-015.jpg, dateTime=2025-02-23T15:26:03.135238500)]
+2025-02-23 15:26:18.127 [http-nio-8088-exec-6] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/3':
+
+org.apache.catalina.connector.RequestFacade@e7ac02b
+
+servletPath:/api/v1/products/upload-images/3
+pathInfo:null
+headers: 
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjE5NjgxOTc3IiwidXNlcklkIjoxOCwic3ViIjoiMTk2ODE5NzciLCJleHAiOjE3NDI4MzIwNDF9.j2u1c953Vh6OO3cOhgB0LThuJxq185v6tVM11V62G0k
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: 036c0807-5f90-422b-a9fb-56a2dd2d48d7
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------365039739023865232047992
+content-length: 1032562
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 15:26:18.128 [http-nio-8088-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/3
+2025-02-23 15:26:18.163 [http-nio-8088-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/products/upload-images/3
+2025-02-23 15:26:18.180 [http-nio-8088-exec-6] INFO  c.p.s.services.FileUploadService - 2025-02-23
+2025-02-23 15:26:18.180 [http-nio-8088-exec-6] INFO  c.p.s.services.FileUploadService - shopapp
+2025-02-23 15:26:18.921 [http-nio-8088-exec-6] INFO  c.p.s.controllers.ProductController - responses: [FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299178181-011.jpg, dateTime=2025-02-23T15:26:18.699331600), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299178181-012.jpg, dateTime=2025-02-23T15:26:18.772234900), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299178181-013.jpg, dateTime=2025-02-23T15:26:18.656793800), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299178181-014.jpg, dateTime=2025-02-23T15:26:18.921834500), FileUploadResponse(filePath=https://quyetbh203-app.s3.ap-southeast-1.amazonaws.com/shopapp/1740299178182-015.jpg, dateTime=2025-02-23T15:26:18.692364800)]
+2025-02-23 15:34:56.767 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-23 15:34:56.886 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-23 15:34:56.893 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-23 15:35:00.406 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-02-23 15:35:00.442 [main] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.12 with PID 10876 (D:\JavaSpring\backend-20\shopapp-backend\target\classes started by buihu in D:\JavaSpring\backend-20\shopapp-backend)
+2025-02-23 15:35:00.443 [main] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-23 15:35:01.482 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 15:35:01.486 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-23 15:35:01.656 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 157 ms. Found 7 JPA repository interfaces.
+2025-02-23 15:35:01.670 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 15:35:01.671 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 15:35:01.685 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:35:01.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:35:01.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:35:01.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:35:01.690 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:35:01.691 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:35:01.691 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 15:35:01.691 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-02-23 15:35:02.545 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2025-02-23 15:35:02.562 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-02-23 15:35:02.568 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-23 15:35:02.569 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-02-23 15:35:02.737 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-23 15:35:02.739 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2248 ms
+2025-02-23 15:35:02.904 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-23 15:35:02.985 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2025-02-23 15:35:02.997 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-02-23 15:35:03.274 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-23 15:35:03.625 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-23 15:35:03.649 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-23 15:35:03.970 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@768f4b42
+2025-02-23 15:35:03.972 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-23 15:35:04.406 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-23 15:35:05.557 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-23 15:35:05.561 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-23 15:35:05.932 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-23 15:35:06.064 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-23 15:35:06.823 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)
+2025-02-23 15:35:06.843 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-23 15:35:07.691 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)
+2025-02-23 15:35:07.691 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-23 15:35:08.153 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7342eb53, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27bc13f4, org.springframework.security.web.context.SecurityContextHolderFilter@d424f08, org.springframework.security.web.header.HeaderWriterFilter@41cf885f, org.springframework.web.filter.CorsFilter@605ba15f, org.springframework.security.web.authentication.logout.LogoutFilter@513e0c9a, com.project.shopapp.filters.JwtTokenFilter@6888a33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61c3b31c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@623f27a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bd42eef, org.springframework.security.web.access.ExceptionTranslationFilter@49f4792a, org.springframework.security.web.access.intercept.AuthorizationFilter@7144cd51]
+2025-02-23 15:35:08.171 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2025-02-23 15:35:08.602 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-02-23 15:35:08.629 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2025-02-23 15:35:08.638 [main] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 8.539 seconds (process running for 9.555)
+2025-02-23 15:45:51.769 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-23 15:45:51.770 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-23 15:45:51.777 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-02-23 15:45:51.803 [http-nio-8088-exec-1] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/users/login':
+
+org.apache.catalina.connector.RequestFacade@74fc9113
+
+servletPath:/api/v1/users/login
+pathInfo:null
+headers: 
+accept-language: en
+content-type: application/json
+accept: */*
+cache-control: no-cache
+postman-token: 1641f1f4-d384-4b60-ac9f-56a5eed2eb39
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 108
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 15:45:51.817 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/users/login
+2025-02-23 15:46:32.907 [http-nio-8088-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/users/login
+2025-02-23 15:46:55.616 [http-nio-8088-exec-1] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-02-23 15:46:55.894 [http-nio-8088-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-23 16:01:46.971 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-23 16:01:47.123 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-23 16:01:47.134 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-23 16:01:50.017 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-02-23 16:01:50.073 [main] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.12 with PID 1172 (D:\JavaSpring\backend-20\shopapp-backend\target\classes started by buihu in D:\JavaSpring\backend-20\shopapp-backend)
+2025-02-23 16:01:50.075 [main] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-23 16:01:50.951 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 16:01:50.952 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-23 16:01:51.108 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 148 ms. Found 7 JPA repository interfaces.
+2025-02-23 16:01:51.125 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 16:01:51.126 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 16:01:51.138 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:01:51.139 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:01:51.139 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:01:51.139 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:01:51.140 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:01:51.141 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:01:51.141 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:01:51.142 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-02-23 16:01:51.767 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2025-02-23 16:01:51.775 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-02-23 16:01:51.778 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-23 16:01:51.779 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-02-23 16:01:51.872 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-23 16:01:51.873 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1720 ms
+2025-02-23 16:01:51.996 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-23 16:01:52.049 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2025-02-23 16:01:52.053 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-02-23 16:01:52.207 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-23 16:01:52.342 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-23 16:01:52.362 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-23 16:01:52.526 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e31d53b
+2025-02-23 16:01:52.529 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-23 16:01:52.889 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-23 16:01:54.157 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-23 16:01:54.162 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-23 16:01:54.594 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-23 16:01:54.737 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-23 16:01:55.245 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)
+2025-02-23 16:01:55.264 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-23 16:01:55.678 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)
+2025-02-23 16:01:55.678 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-23 16:01:55.929 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1cfa4ad9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41d73414, org.springframework.security.web.context.SecurityContextHolderFilter@2cd9488b, org.springframework.security.web.header.HeaderWriterFilter@7548d0d, org.springframework.web.filter.CorsFilter@35d613cb, org.springframework.security.web.authentication.logout.LogoutFilter@25dae0f0, com.project.shopapp.filters.JwtTokenFilter@58ec3e8b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12a16e42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@447bf09d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f498e2, org.springframework.security.web.access.ExceptionTranslationFilter@44459661, org.springframework.security.web.access.intercept.AuthorizationFilter@795239f9]
+2025-02-23 16:01:55.936 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2025-02-23 16:01:56.211 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-02-23 16:01:56.245 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2025-02-23 16:01:56.252 [main] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 6.654 seconds (process running for 7.29)
+2025-02-23 16:01:58.905 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-23 16:01:58.905 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-23 16:01:58.906 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-23 16:01:58.913 [http-nio-8088-exec-2] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/users/register':
+
+org.apache.catalina.connector.RequestFacade@1629bb6c
+
+servletPath:/api/v1/users/register
+pathInfo:null
+headers: 
+accept-language: en
+content-type: application/json
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: bfbecc4f-b76d-43a5-9281-6fb89f56e8f8
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 289
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 16:01:58.919 [http-nio-8088-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/users/register
+2025-02-23 16:01:58.936 [http-nio-8088-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/users/register
+2025-02-23 16:01:59.413 [http-nio-8088-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-23 16:02:16.635 [http-nio-8088-exec-5] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/users/login':
+
+org.apache.catalina.connector.RequestFacade@5c60cda8
+
+servletPath:/api/v1/users/login
+pathInfo:null
+headers: 
+accept-language: en
+content-type: application/json
+accept: */*
+cache-control: no-cache
+postman-token: 6bd9dac5-67b1-4fbc-a223-e490c3cd9101
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 108
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 16:02:16.635 [http-nio-8088-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/users/login
+2025-02-23 16:02:16.636 [http-nio-8088-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/v1/users/login
+2025-02-23 16:02:16.880 [http-nio-8088-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-02-23 16:02:16.938 [http-nio-8088-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-23 16:02:37.586 [http-nio-8088-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/api/v1/products/upload-images/7':
+
+org.apache.catalina.connector.RequestFacade@6a0f5546
+
+servletPath:/api/v1/products/upload-images/7
+pathInfo:null
+headers: 
+authorization: Bearer "eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjIwMjUyMDI1IiwidXNlcklkIjoyMSwic3ViIjoiMjAyNTIwMjUiLCJleHAiOjE3NDI4OTMzMzZ9.io3KnjyYIdy5jQMUeaaZfrKHk25yh1pS9DV76DAhxXg
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: 4a65c4b8-d4bc-4faf-9cb1-8c70599b3bbf
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------410663467149532901243759
+content-length: 978426
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 16:02:37.586 [http-nio-8088-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/v1/products/upload-images/7
+2025-02-23 16:02:37.605 [http-nio-8088-exec-4] ERROR c.p.shopapp.filters.JwtTokenFilter - JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2025-02-23 16:02:37.609 [http-nio-8088-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+Request received for POST '/error':
+
+org.apache.catalina.core.ApplicationHttpRequest@1e785229
+
+servletPath:/error
+pathInfo:null
+headers: 
+authorization: Bearer "eyJhbGciOiJIUzI1NiJ9.eyJwaG9uZU51bWJlciI6IjIwMjUyMDI1IiwidXNlcklkIjoyMSwic3ViIjoiMjAyNTIwMjUiLCJleHAiOjE3NDI4OTMzMzZ9.io3KnjyYIdy5jQMUeaaZfrKHk25yh1pS9DV76DAhxXg
+user-agent: PostmanRuntime/7.43.0
+accept: */*
+cache-control: no-cache
+postman-token: 4a65c4b8-d4bc-4faf-9cb1-8c70599b3bbf
+host: localhost:8088
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-type: multipart/form-data; boundary=--------------------------410663467149532901243759
+content-length: 978426
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  JwtTokenFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2025-02-23 16:02:37.611 [http-nio-8088-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-02-23 16:02:37.653 [http-nio-8088-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-02-23 16:02:37.696 [http-nio-8088-exec-4] INFO  Spring Security Debugger - 
+
+************************************************************
+
+New HTTP session created: 891D1913CB68D9C392C5394C97B87238
+
+Call stack: 
+
+	at org.springframework.security.web.debug.Logger.info(Logger.java:46)
+	at org.springframework.security.web.debug.DebugFilter$DebugRequestWrapper.getSession(DebugFilter.java:171)
+	at jakarta.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:229)
+	at jakarta.servlet.http.HttpServletRequestWrapper.getSession(HttpServletRequestWrapper.java:229)
+	at org.springframework.security.web.savedrequest.HttpSessionRequestCache.saveRequest(HttpSessionRequestCache.java:76)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.sendStartAuthentication(ExceptionTranslationFilter.java:218)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.handleAccessDeniedException(ExceptionTranslationFilter.java:197)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.handleSpringSecurityException(ExceptionTranslationFilter.java:178)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:147)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.security.web.debug.DebugFilter.invokeWithWrappedRequest(DebugFilter.java:90)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:78)
+	at org.springframework.security.web.debug.DebugFilter.doFilter(DebugFilter.java:67)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:358)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:151)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+
+************************************************************
+
+
+2025-02-23 16:02:37.696 [http-nio-8088-exec-4] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8088/error?continue to session
+2025-02-23 16:02:37.697 [http-nio-8088-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-02-23 16:12:22.472 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-02-23 16:12:22.519 [main] INFO  c.project.shopapp.ShopappApplication - Starting ShopappApplication using Java 17.0.12 with PID 2516 (D:\JavaSpring\backend-20\shopapp-backend\target\classes started by buihu in D:\JavaSpring\backend-20\shopapp-backend)
+2025-02-23 16:12:22.522 [main] INFO  c.project.shopapp.ShopappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-23 16:12:23.313 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 16:12:23.315 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-23 16:12:23.444 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 122 ms. Found 7 JPA repository interfaces.
+2025-02-23 16:12:23.458 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-23 16:12:23.460 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-23 16:12:23.473 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:12:23.473 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:12:23.473 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:12:23.473 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:12:23.475 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:12:23.476 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:12:23.476 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.project.shopapp.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-02-23 16:12:23.476 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-02-23 16:12:24.091 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2025-02-23 16:12:24.099 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-02-23 16:12:24.101 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-23 16:12:24.101 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-02-23 16:12:24.188 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-23 16:12:24.188 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1611 ms
+2025-02-23 16:12:24.304 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-23 16:12:24.361 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.6.Final
+2025-02-23 16:12:24.364 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2025-02-23 16:12:24.492 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-23 16:12:24.612 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-23 16:12:24.629 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-02-23 16:12:24.766 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a4a2090
+2025-02-23 16:12:24.769 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-02-23 16:12:25.083 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2025-02-23 16:12:26.066 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-23 16:12:26.068 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-23 16:12:26.392 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-23 16:12:26.483 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-23 16:12:27.015 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)
+2025-02-23 16:12:27.034 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.OrderController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.OrderController.getOrdersByKeyword(java.lang.String,int,int)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-23 16:12:27.513 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ROLE_ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)
+2025-02-23 16:12:27.515 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[com.project.shopapp.controllers.ProductController; public org.springframework.http.ResponseEntity com.project.shopapp.controllers.ProductController.deleteProduct(long)]] with attributes [[authorize: 'hasRole('ROLE_ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-02-23 16:12:27.785 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42141c59, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49854d93, org.springframework.security.web.context.SecurityContextHolderFilter@690506b0, org.springframework.security.web.header.HeaderWriterFilter@4a5d8ae4, org.springframework.web.filter.CorsFilter@29d7d117, org.springframework.security.web.authentication.logout.LogoutFilter@7a0c046e, com.project.shopapp.filters.JwtTokenFilter@3c83e9ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47d9bdf4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@682d0957, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5213a8f7, org.springframework.security.web.access.ExceptionTranslationFilter@12046998, org.springframework.security.web.access.intercept.AuthorizationFilter@5390bdee]
+2025-02-23 16:12:27.797 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2025-02-23 16:12:28.036 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-02-23 16:12:28.064 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2025-02-23 16:12:28.075 [main] INFO  c.project.shopapp.ShopappApplication - Started ShopappApplication in 5.946 seconds (process running for 6.486)
+2025-02-23 16:12:32.077 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-23 16:12:32.198 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-02-23 16:12:32.206 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

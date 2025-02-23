@@ -97,14 +97,12 @@ public class FileUploadService implements IFileUploadService {
         List<FileUploadResponse> responses = futures.stream()
                 .map(CompletableFuture::join)
                 .collect(Collectors.toList());
-
         executorService.shutdown();
-
         return responses;
     }
 
-    @Override
-    public FileUploadResponse uploadSingleFile(MultipartFile multipartFile) {
+
+    private FileUploadResponse uploadSingleFile(MultipartFile multipartFile) {
         try {
             ObjectMetadata objectMetadata = new ObjectMetadata();
             objectMetadata.setContentType(multipartFile.getContentType());

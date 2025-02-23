@@ -7,6 +7,5 @@ import java.util.List;
 
 public interface IFileUploadService {
     List<FileUploadResponse> uploadFiles(List<MultipartFile> multipartFile);
-    FileUploadResponse uploadSingleFile(MultipartFile multipartFile);
     List<FileUploadResponse> uploadMultipleFiles(List<MultipartFile> multipartFile);
 }
