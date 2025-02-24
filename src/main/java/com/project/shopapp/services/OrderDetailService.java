@@ -23,11 +23,9 @@ public class OrderDetailService implements IOrderDetailService{
     @Override
     @Transactional
     public OrderDetail createOrderDetail(OrderDetailDTO orderDetailDTO) throws Exception {
-        //tìm xem orderId có tồn tại ko
         Order order = orderRepository.findById(orderDetailDTO.getOrderId())
                 .orElseThrow(() -> new DataNotFoundException(
                         "Cannot find Order with id : "+orderDetailDTO.getOrderId()));
-        // Tìm Product theo id
         Product product = productRepository.findById(orderDetailDTO.getProductId())
                 .orElseThrow(() -> new DataNotFoundException(
                         "Cannot find product with id: " + orderDetailDTO.getProductId()));
@@ -39,7 +37,6 @@ public class OrderDetailService implements IOrderDetailService{
                 .totalMoney(orderDetailDTO.getTotalMoney())
                 .color(orderDetailDTO.getColor())
                 .build();
-        //lưu vào db
         return orderDetailRepository.save(orderDetail);
     }
 
