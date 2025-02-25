@@ -1,4 +1,4 @@
-package com.project.shopapp.services;
+package com.project.shopapp.services.file;
 
 import com.project.shopapp.responses.FileUploadResponse;
 import org.springframework.web.multipart.MultipartFile;

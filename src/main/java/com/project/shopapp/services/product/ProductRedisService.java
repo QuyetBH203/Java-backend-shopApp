@@ -1,4 +1,4 @@
-package com.project.shopapp.services;
+package com.project.shopapp.services.product;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ProductRedisService implements IProductRedisService{
+public class ProductRedisService implements IProductRedisService {
     //declare this code, spring find in application context object with class RedisTemplate.
     private final RedisTemplate<String, Object> redisTemplate;
     private final ObjectMapper redisObjectMapper;

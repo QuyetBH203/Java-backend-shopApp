@@ -5,7 +5,7 @@ import com.project.shopapp.dtos.*;
 import com.project.shopapp.models.Category;
 import com.project.shopapp.responses.CategoryResponse;
 import com.project.shopapp.responses.UpdateCategoryResponse;
-import com.project.shopapp.services.CategoryService;
+import com.project.shopapp.services.category.CategoryService;
 import com.project.shopapp.utils.MessageKeys;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

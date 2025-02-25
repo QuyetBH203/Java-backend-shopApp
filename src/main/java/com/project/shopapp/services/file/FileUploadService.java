@@ -1,4 +1,4 @@
-package com.project.shopapp.services;
+package com.project.shopapp.services.file;
 
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
