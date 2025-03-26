@@ -222,7 +222,7 @@ public class ProductController {
             );
         }
 
-        return ResponseEntity.ok(ProductListResponse
+         return ResponseEntity.ok(ProductListResponse
                         .builder()
                         .products(productResponses)
                         .totalPages(totalPages)

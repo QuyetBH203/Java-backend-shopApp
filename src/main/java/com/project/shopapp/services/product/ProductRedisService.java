@@ -18,19 +18,16 @@ public class ProductRedisService implements IProductRedisService {
     private final RedisTemplate<String, Object> redisTemplate;
     private final ObjectMapper redisObjectMapper;
     private String getKeyFrom(String keyword,
-                       Long categoryId,
-                       PageRequest pageRequest) {
+                              Long categoryId,
+                              PageRequest pageRequest) {
         int pageNumber = pageRequest.getPageNumber();
         int pageSize = pageRequest.getPageSize();
         Sort sort = pageRequest.getSort();
         String sortDirection = sort.getOrderFor("id")
                 .getDirection() == Sort.Direction.ASC ? "asc": "desc";
-        return String.format("all_products:%d:%d:%s", pageNumber, pageSize, sortDirection);
-        /*
-        {
-            "all_products:1:10:asc": "list of products object"
-        }
-        * */
+        String key = String.format("all_products:%s:%d:%d:%d:%s",
+                keyword, categoryId, pageNumber, pageSize, sortDirection);
+        return key;
     }
     @Override
     public List<ProductResponse> getAllProducts(String keyword,
