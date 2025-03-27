@@ -18,6 +18,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -36,7 +37,7 @@ public class DepartmentController {
             BindingResult result
     ) {
         DepartmentResponse departmentResponse = new DepartmentResponse();
-        if(result.hasErrors()){
+        if (result.hasErrors()) {
             List<String> errorMessages = result.getFieldErrors()
                     .stream()
                     .map(FieldError::getDefaultMessage)
@@ -56,7 +57,7 @@ public class DepartmentController {
             BindingResult result
     ) {
         DepartmentResponse departmentResponse = new DepartmentResponse();
-        if(result.hasErrors()){
+        if (result.hasErrors()) {
             List<String> errorMessages = result.getFieldErrors()
                     .stream()
                     .map(FieldError::getDefaultMessage)
@@ -68,6 +69,7 @@ public class DepartmentController {
         departmentResponse.setDepartment(department);
         return ResponseEntity.ok(departmentResponse);
     }
+
     @GetMapping("/{id}")
     public ResponseEntity<Department> getDepartmentById(@PathVariable("id") long id) {
         Department department = departmentService.getDepartmentById(id);
@@ -75,9 +77,9 @@ public class DepartmentController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteDepartment(@PathVariable("id") long id) {
+    public ResponseEntity<?> deleteDepartment(@PathVariable("id") long id) {
         departmentService.deleteDepartment(id);
-        return ResponseEntity.ok("Department deleted successfully");
+        return ResponseEntity.ok(Collections.singletonMap("message", "Department deleted successfully"));
     }
 
     @GetMapping("")
@@ -99,20 +101,24 @@ public class DepartmentController {
                 departmentCode, name, address, updatedAt, createdAt, pageRequest
         );
         List<Department> departmentsContent = departments.getContent();
+        long totalRecords = departments.getTotalElements();
         return ResponseEntity.ok().body(DepartmentListResponse.builder()
                 .departments(departmentsContent)
-                .totalPages(departments.getTotalPages()).build()
+                .totalRecords(totalRecords)
+                .totalPages(departments.getTotalPages()
+                )
+                .build()
         );
 
     }
 
-//    @PostMapping("/generateFake")
-    private ResponseEntity<String> generateFakeData(){
+    //    @PostMapping("/generateFake")
+    private ResponseEntity<String> generateFakeData() {
         Faker faker = new Faker();
-        for(int i=1; i<= 150;i++){
+        for (int i = 1; i <= 150; i++) {
             String departmentName = faker.company().name();
             String departmentCode = faker.code().ean8();
-            if(!departmentService.existsByName(departmentName) && !departmentService.existsByDepartmentCode(departmentCode)){
+            if (!departmentService.existsByName(departmentName) && !departmentService.existsByDepartmentCode(departmentCode)) {
                 DepartmentDTO departmentDTO = new DepartmentDTO();
                 departmentDTO.setName(departmentName);
                 departmentDTO.setDepartmentCode(departmentCode);

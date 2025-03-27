@@ -85,6 +85,10 @@ public class WebSecurityConfig {
                                     String.format("%s/departments/**", apiPrefix)).permitAll()
                             .requestMatchers(POST,
                                     String.format("%s/departments/**", apiPrefix)).permitAll()
+                            .requestMatchers(PUT,
+                                    String.format("%s/departments/**", apiPrefix)).permitAll()
+                            .requestMatchers(DELETE,
+                                    String.format("%s/departments/**",apiPrefix)).permitAll()
 
                             .anyRequest()
                             .authenticated();

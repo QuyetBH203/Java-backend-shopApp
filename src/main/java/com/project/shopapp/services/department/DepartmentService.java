@@ -1,17 +1,13 @@
 package com.project.shopapp.services.department;
 
-import com.github.javafaker.Faker;
 import com.project.shopapp.dtos.DepartmentDTO;
 import com.project.shopapp.models.Department;
 import com.project.shopapp.repositories.DepartmentRepository;
-import com.project.shopapp.responses.DepartmentResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.time.LocalDateTime;
 
@@ -75,7 +71,6 @@ public class DepartmentService implements IDepartmentService {
                                                       LocalDateTime updatedAt,
                                                       LocalDateTime createdAt, PageRequest pageRequest) {
         return departmentRepository.searchDepartments(departmentCode, name, address, updatedAt, createdAt, pageRequest);
-
     }
 
 

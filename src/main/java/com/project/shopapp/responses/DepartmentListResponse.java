@@ -15,4 +15,5 @@ import java.util.List;
 public class DepartmentListResponse {
     private List<Department> departments;
     private int totalPages;
+    private long totalRecords;
 }
